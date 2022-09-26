@@ -18,7 +18,7 @@ let AppModule = class AppModule {
 AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
-            mongoose_1.MongooseModule.forRoot('mongodb+srv://vanhai240x:2Adgjmptw@cluster0.glihtj4.mongodb.net/?retryWrites=true&w=majority'),
+            mongoose_1.MongooseModule.forRoot('mongodb://localhost/todo-list'),
             mongoose_1.MongooseModule.forFeature([
                 { name: todo_schema_1.Todo.name, schema: todo_schema_1.TodoSchema },
                 { name: status_todo_schema_1.StatusTodo.name, schema: status_todo_schema_1.StatusTodoSchema },

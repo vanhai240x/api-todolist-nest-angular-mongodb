@@ -7,9 +7,7 @@ import { TodoService } from './services/todo.service';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(
-      'mongodb+srv://vanhai240x:2Adgjmptw@cluster0.glihtj4.mongodb.net/?retryWrites=true&w=majority',
-    ),
+    MongooseModule.forRoot('mongodb://localhost/todo-list'),
     MongooseModule.forFeature([
       { name: Todo.name, schema: TodoSchema },
       { name: StatusTodo.name, schema: StatusTodoSchema },
@@ -19,4 +17,3 @@ import { TodoService } from './services/todo.service';
   providers: [TodoService],
 })
 export class AppModule {}
-  
